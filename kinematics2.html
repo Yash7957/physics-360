@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3.0.1/es5/tex-mml-chtml.js"></script>
+    <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" data-auto-a11y="true" ></script>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@0,400;0,600;1,400;1,600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet">
+    <link rel="icon" href="svgs/logo.svg" type="image/svg">
+    <link rel="stylesheet" href="styles/styles.css">
+
+
+    <title>Kinematics-2 | PHYSICS-360°</title>
+
+</head>
+<body>
+
+    <div class="nav">
+        <input type="checkbox" id="nav-check">
+        <div class="nav-header">
+          <div class="nav-title">
+            <div class="nav-title__sub"><div class="nav-title__image"><img src="logo.svg" alt="Oops!" height="80px" width="auto"></div></div>
+          </div>
+        </div>
+        <div class="nav-btn">
+          <label for="nav-check">
+            <span></span>
+            <span></span>
+            <span></span>
+          </label>
+        </div>
+        <div class="nav-links">
+            <a target="_blank" href="index.html">Home</a>
+            <a target="_blank" href="start.html">Get started</a>
+            <a target="_blank" href="contact.html">Contact</a>   
+            <a target="_blank" href="about.html">About</a>   
+        </div>
+    </div>
+
+    <div class="main-page-content">
+        <div class="navbar">
+            <div class="logo">
+                <img src="logo.svg" alt="Error! Can't load logo.">
+                <br>
+                <span style="font-family: 'Source Serif Pro', serif;font-size: 2rem;font-weight: bold;">PHYSICS-360°</span>
+                <br>
+                <span style="font-family: 'Source Serif Pro', serif;font-size: 1.25rem;">Never stop questioning.</span>
+            </div>
+            <div class="links">
+                <ul>
+                    <li><a target="_blank" href="index.html">Home</a></li>
+                    <li><a target="_blank" href="start.html">Get started</a></li>
+                    <li><a target="_blank" href="contact.html">Contact</a></li>
+                    <li><a target="_blank" href="about.html">About</a></li>
+                </ul>
+                <hr width="80%" style="border: 1px solid black; margin: 1.5rem auto;">
+                <ul>
+                    <li>Other sites:</li>
+                    <li><a target="_blank" href="https://ocw.mit.edu/">MIT OCW</a></li>
+                    <li><a target="_blank" href="https://www.khanacademy.org/">Khan Academy</a></li>
+                    <li><a target="_blank" href="https://www.youtube.com/channel/UCiEHVhv0SBMpP75JbzJShqw">Lectures by Walter Lewin</a></li>
+                </ul>
+                <hr width="80%" style="border: 1px solid black; margin: 1.5rem auto;">
+                <ul>
+                    <li>Other topics:</li>
+                    <li><a target="_blank" href="https://ocw.mit.edu/">Wave-particle duality</a></li>
+                    <li><a target="_blank" href="https://www.youtube.com/watch?v=a8FTr2qMutA">Heisenberg's Principle</a></li>
+                    <li><a target="_blank" href="https://www.thoughtco.com/what-is-the-anthropic-principle-2698848">The Anthropic Principle</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="section-intro">
+                <h1 style="text-transform: uppercase;font-size: 3rem;">Kinematics-2</h1>
+                <p>I hope you've already visited the lesson before this- <a href="kinematics1.html">Kinematics-1</a>. If not, go check it out. Here, we'll continue learning about what motion means and hopefully, step into the real world, solving some simple problems.</p>
+                <p>Here, we'll try crunching some numbers with the quantities we've learnt about in the previous lesson. We'll look at different instances of distances and displacements, calculate the average speeds and velocities and understand what acceleration means. We've all heard the word and we may even know the definition. But what does it really mean?</p>
+            </div>
+
+            <hr width="92%" class="hr">
+
+            <div class="section-i">
+                <h1 style="text-transform: uppercase;">Recall this</h1>
+                <p>Try explaining these terms to me: What's the displacement of a body? Alright, then what's the distance a body travels? Hmm, okay. What about the difference between the speed and velocity of a body? Did you have any trouble defining or explaining these terms? Well, go back to <i><b><a href="kinematics1.html">Kinematics-1</a></b></i> once more to be clear about this. If you didn't have any problems in answering, let's try and solve a simple problem. 
+                </p>
+                <p><b>Problem:</b> Consider the body we had last time and the path \(AB\). Let's say that the solid line is around 20km. Consider \(AB\) to be around 7.5km. Let's say that the body reaches from \(A\) to \(B\) in 45 minutes. What then is the average speed and average velocity of the body?</p>
+                <p><b>Solution:</b></p>
+                <div class="section-i-image">
+                    <img src="kinematics2.1.svg" alt="ERROR! Can't load image.">
+                </div>
+                <p>Well, let's recall first the formula of the average speed of a body:
+                    $$avg.\;speed=\frac{total\;distance\;travelled}{net\;total\;time}$$ 
+                    
+                    The body travels along the solid path from \(A\) to \(B\). That means the total distance is 20km. We know the body took 45 minutes to travel from \(A\) to \(B\). This is \(\frac{3}{4}\) of an hour. We get that the average speed is equal to- 
+                    $$=20/\frac{3}{4}\;km/hr$$   
+                    $$\approx 26.67\;km/hr$$ 
+                    
+                    <b>Note carefully the units of time you're using. Adjust the unit of speed accordingly, or velocity for that matter. You could even give the answer above in units of \(km/min\), though that's not used often. </b>
+                </p>
+                <p>Now the average velocity of a body is the net displacement over the total time taken, right? So, we get-
+                    $$v=7.5/\frac{3}{4}$$
+                    $$=7.5\times\frac{4}{3}$$
+                    $$=10\;km/hr$$
+                </p>
+
+                <p>Let's do one more problem before moving further.</p>
+                <p><b>Problem:</b> Consider a body moving around in a circle. \(A\) is the centre. It starts at point \(C\) and stops at point \(B\). The radius of the circle is 105m. \(Arc \; CDB\) is three-quarters of the entire circumference. Calculate its speed and displacement if it completes the journey in 5 minutes.</p>
+                <p><b>Solution:</b></p>
+                    <div class="section-i-image"><img src="kinematics2.2.svg" alt="ERROR! Can't load image."></div>
+                    <p> Here we see that the body moves a distance of the arc length of \(Arc \; CDB\). The displacement of the body is the straight line \(BC\). First, let's calculate the distance travelled. It is equal to three-fourths the circumference.
+                    $$distance=\frac{3}{4} \times 2\pi r$$
+                    $$=\frac{3 \pi r}{2}$$
+                    $$=\frac{3 \times 105 \times 22}{2 \times 7}$$
+                    $$=495m$$
+                    Thus, the speed of the body is-
+                    $$speed=\frac{495m}{5 \times 60s}$$
+                    $$=1.65m/s$$
+                    </p>
+                    <p>To find the displacement, we'll have to use a bit of geometry. Consider \(\Delta ABC \). \(AB=AC=r=105m \). Also, since \(Arc \; CBD \) is three-fourths of the circle, \(\angle BAC=90°\). By Pythagoras' Theorem-
+                    $$BC=\sqrt{{AB}^2+{AC}^2}$$
+                    $$BC=\sqrt{2(105*105)}$$
+                    $$BC\approx 148.47m$$ 
+                    </p>
+
+                    <p>Did you solve both the questions on your own? If so, give yourself a pat on the back and let's move on.</p>
+            </div>
+
+            <hr width="92%" class="hr">
+
+            <div class="section-i">
+                <h1 style="text-transform: uppercase;">Acceleration</h1>
+                <p>It's the rate of change of the velocity of a body. What does this mean? Well, the velocity of a body is how much a body displaces, or what its displacement is over a unit of time. Similarly, the acceleration measures how much velocity changes per unit time, say 1 second or 1 hour. Well, it must then be related to the displacement somehow, right? Yes it is. It's the rate of change of displacement per unit time or the displacement per unit time, per unit time. This sounds like utter nonsense but think about it. You're in a car and the speedometer slowly moves, from a 60 to an 80 to a 100, metric units of course. If you're in America, you probably see 40 then a 60 then a 70 perhaps. That's the velocity for your car, as long as it moves in a straight line forward, since the displacement and distance will thus be the same. The simple definition may not be enough to understand what acceleration is. Maybe this will help.</p>
+                <p><b>Another problem: A body is moving along the \(X-Axis\) such that in the first second, it's at the 1 metre mark, in the next second, it's at the 4 metre mark, in the next second at the 9 metre mark and so on. Find it's acceleration.</b></p>
+                <p>Solution: Do you notice how each second, it is at the \(t^2\) mark? When a body is in uniform motion, i.e. motion in a straight line where the body moves equal amounts of displacement in equal intervals of time, say 5m every 2 seconds.</p>
+                <div class="section-i-image"><img src="kinematics2.3.svg" alt=""></div>
+                <p>Let's consider the first 2 seconds of the journey. Say each division on the line represents a displacement of 1m. The body is at point O at time \(t=0\). It's at point C at time \(t=1\;second\) and at point F at time \(t=2\;seconds\). Say the body has travelled with a uniform velocity from O to C and C to F.
+                </p>
+                <p>We'll calculate the change in velocity over the first and second second. For the first second, the body has an average velocity of 1m/s. In the second second, the displacement \(s\) is-
+                $$s_{(t=2)}=x_f-x_i$$
+                $$=4-1$$
+                $$=3\;m$$
+                Thus, the average velocity in the second second is 3m/s. Now, the acceleration is the change in the body's velocity. In this particular scenario, the acceleration is uniform. Try and find a relation between the time and the position of the body. We'll discuss later why such a relation corresponds to uniform acceleration. The acceleration of the body is-
+                $$\vec{a}=\frac{\Delta v}{\Delta t}$$
+                $$\vec{a}=\frac{v_f-v_i}{1}$$
+                $$\vec{a}=2\;m/s^2$$
+                </p>
+                <p>
+                <b>Note one detail. The average velocity at any points of time \(t_1\) and \(t_2\) will be \(2(t_2-t_1)\). <a target="_blank" href="https://math.mit.edu/~djk/calculus_beginners/">Calculus</a> explains this concept.</b>
+                </p>
+            </div>    
+        </div>
+    </div>
+
+    <div class="ending">
+        <span>That's all for now!</span>
+    </div>
+
+    <div class="last">
+        <span>Made by <a href="">Yash Sah</a></span>
+    </div>
+   
+</body>
+</html>

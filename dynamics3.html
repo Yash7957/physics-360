@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3.0.1/es5/tex-mml-chtml.js"></script>
+    <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" data-auto-a11y="true" ></script>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@0,400;0,600;1,400;1,600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet">
+    <link rel="icon" href="svgs/logo.svg" type="image/svg">
+    <link rel="stylesheet" href="styles/styles.css">
+
+    <title>Dynamics-3 | PHYSICS-360°</title>
+</head>
+<body>
+    <div class="nav">
+        <input type="checkbox" id="nav-check">
+        <div class="nav-header">
+          <div class="nav-title">
+            <div class="nav-title__sub"><div class="nav-title__image"><img src="logo.svg" alt="Oops!" height="80px" width="auto"></div></div>
+          </div>
+        </div>
+        <div class="nav-btn">
+          <label for="nav-check">
+            <span></span>
+            <span></span>
+            <span></span>
+          </label>
+        </div>
+        <div class="nav-links">
+            <a target="_blank" href="index.html">Home</a>
+            <a target="_blank" href="start.html">Get started</a>
+            <a target="_blank" href="contact.html">Contact</a>   
+            <a target="_blank" href="about.html">About</a>   
+        </div>
+    </div>
+    
+    <div class="main-page-content">
+        <div class="navbar">
+            <div class="logo">
+                <img src="logo.svg" alt="Error! Can't load logo.">
+                <br>
+                <span style="font-family: 'Source Serif Pro', serif;font-size: 2rem;font-weight: bold;">PHYSICS-360°</span>
+                <br>
+                <span style="font-family: 'Source Serif Pro', serif;font-size: 1.25rem;">Never stop questioning.</span>
+            </div>
+            <div class="links">
+                <ul>
+                    <li><a target="_blank" href="index.html">Home</a></li>
+                    <li><a target="_blank" href="start.html">Get started</a></li>
+                    <li><a target="_blank" href="contact.html">Contact</a></li>
+                    <li><a target="_blank" href="about.html">About</a></li>
+                </ul>
+                <hr width="80%" style="border: 1px solid black; margin: 1.5rem auto;">
+                <ul>
+                    <li>Other sites:</li>
+                    <li><a target="_blank" href="https://ocw.mit.edu/">MIT OCW</a></li>
+                    <li><a target="_blank" href="https://www.khanacademy.org/">Khan Academy</a></li>
+                    <li><a target="_blank" href="https://www.youtube.com/channel/UCiEHVhv0SBMpP75JbzJShqw">Lectures by Walter Lewin</a></li>
+                </ul>
+                <hr width="80%" style="border: 1px solid black; margin: 1.5rem auto;">
+                <ul>
+                    <li>Other topics:</li>
+                    <li><a target="_blank" href="https://ocw.mit.edu/">Wave-particle duality</a></li>
+                    <li><a target="_blank" href="https://www.youtube.com/watch?v=a8FTr2qMutA">Heisenberg's Principle</a></li>
+                    <li><a target="_blank" href="https://www.thoughtco.com/what-is-the-anthropic-principle-2698848">The Anthropic Principle</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="section-intro">
+                <h1 class="main-page-title">Dynamics-3</h1>
+                <p>Here we'll learn about what the Center of Mass (COM or CM) of a body is and learn about how it is a useful tool to help simplify physical problems that may, for example, involve motions of complicated bodies. Here's the crux of the concept - imagine a hammer. You throw it in the air. It moves in a complicated fashion in the air, tumbling and rotating before it finally falls on the ground. You know that such any body should experience a projectile motion in the presence of gravity (vertical motion in the presence of gravity is also a projectile, just that the launch angle \(\theta \) is 90°). But if you were to take a video of the hammer and slow it down a lot, you'll see a very complicated type of motion. However, there is one (and only one) such point throughout the body of the hammer that will move in a perfect projectile, from start to finish. This is the center of mass of the hammer and it is the point at which you can think the mass of the body is concentrated.</p>
+            </div>
+
+            <hr width="92%" class="hr">
+            
+            <div class="section-t">
+                <h1 style="text-transform: uppercase;">Center of mass</h1>
+                <p>The COM is a single point in space (or a plane or a line). There are a lot of special features about this point, one of which is that it is the special point in a body where one can apply a force without causing an angular acceleration. Assume two bodies of masses\(m_1\) and \(m_2\) at positions \(x_1\) and \(x_2\) on the x-axis. We calculate the COM as follows:
+                    $$x_{CM}=\frac{m_1x_1+m_2x_2}{m_1+m_2}$$
+                For larger configurations of such masses, we can write the formula as:
+                    $$x_{CM}=\frac{\sum_i m_ix_i}{\sum_i m_i}$$
+                or,
+                    $$x_{CM}=\frac{\sum_i m_ix_i}{M}$$
+                where \(M\) is the total mass of the chosen configuration. The same formula should be applied to find the y and z-coordinates (if any) of the COM. 
+                </p>
+            </div>
+
+            <div class="section-t">
+                <h1 style="text-transform: uppercase;">Some equations</h1>
+                <p>Take a look at the following. We know that the position vector of the COM is as follows:
+                    $$\vec r_{CM}=\frac{1}{M}\sum_{i}m_ir_i$$
+                    $$or,\;M\vec r_{CM}=\sum_{i}m_ir_i$$
+                Taking the time-derivative on each side,
+                    $$or,\;M\vec v_{CM}=\sum_{i}m_iv_i$$
+                    $$\implies \vec v_{CM}=\frac{1}{M}\sum_{i}\vec p_i$$
+                which I'll write as 
+                    $$\vec p_{tot}=Mv_{CM}$$
+                A remarkable result! You probably don't see how huge a deal it might be but it really is! This actually tells us that any body will behave as if it's mass is concentrated at its COM! Similarly, I can take the time derivative of this equation to get
+                    $$\vec F_{{tot}_{(ext)}}=Ma{cm}$$
+                </p>
+            </div>
+
+            <div class="section-t">
+                <h1 style="text-transform: uppercase;">A new quantity</h1>
+                <p>We're now going to define a new, quite useful quantity in physics - Impulse. It is the change of momentum. Not the rate of change, but simply the change in momentum. For example, during a collision of say a bat with a ball, the bat is going to "impart an impulse to the ball". I.e. in other words, going to change its momentum. We have -
+                    $$Impulse\; \vec J=\Delta \vec p$$
+                Also, the rate of change of momentum is force, i.e.
+                    $$\frac{\Delta p}{\Delta t}=F_{net}$$
+                    $$\implies J=F_{net}\Delta t$$
+                </p>
+                <p><b><i>(An aside: I'm not going to bother putting the vector symbol on top of every vector quantity since it's already understood that some of these fundamentally are vector quantities. I may also forget to put the vector sign on top of every such quantity, so please don't be confused. Physics hasn't been broken.)</i></b></p>
+                <p>Impulse is a vector quantity. It is very useful in reading graphs of Force versus Time. The area under the curve of such a graph tells us the impulse, and therefore the change in momentum of a body (or system).</p>
+            </div>
+
+            <hr width="92%" class="hr">
+        
+            <div class="section-i">
+                <h1></h1>
+                <p></p>
+                <div class="section-i-image">
+                    <img src="" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="ending">
+        <span>That's all for now!</span>
+    </div>
+
+    <div class="last">
+        <span>Made by <a href="">Yash Sah</a></span>
+    </div>
+</body>
+</html>

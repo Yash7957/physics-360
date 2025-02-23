@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3.0.1/es5/tex-mml-chtml.js"></script>
+    <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" data-auto-a11y="true" ></script>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@0,400;0,600;1,400;1,600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet">
+    <link rel="icon" href="svgs/logo.svg" type="image/svg">
+    <link rel="stylesheet" href="styles/styles.css">
+
+    <title>Dynamics-2 | PHYSICS-360°</title>
+</head>
+<body>
+    <div class="nav">
+        <input type="checkbox" id="nav-check">
+        <div class="nav-header">
+          <div class="nav-title">
+            <div class="nav-title__sub"><div class="nav-title__image"><img src="logo.svg" alt="Oops!" height="80px" width="auto"></div></div>
+          </div>
+        </div>
+        <div class="nav-btn">
+          <label for="nav-check">
+            <span></span>
+            <span></span>
+            <span></span>
+          </label>
+        </div>
+        <div class="nav-links">
+            <a target="_blank" href="index.html">Home</a>
+            <a target="_blank" href="start.html">Get started</a>
+            <a target="_blank" href="contact.html">Contact</a>   
+            <a target="_blank" href="about.html">About</a>   
+        </div>
+    </div>
+    
+    <div class="main-page-content">
+        <div class="navbar">
+            <div class="logo">
+                <img src="logo.svg" alt="Error! Can't load logo.">
+                <br>
+                <span style="font-family: 'Source Serif Pro', serif;font-size: 2rem;font-weight: bold;">PHYSICS-360°</span>
+                <br>
+                <span style="font-family: 'Source Serif Pro', serif;font-size: 1.25rem;">Never stop questioning.</span>
+            </div>
+            <div class="links">
+                <ul>
+                    <li><a target="_blank" href="index.html">Home</a></li>
+                    <li><a target="_blank" href="start.html">Get started</a></li>
+                    <li><a target="_blank" href="contact.html">Contact</a></li>
+                    <li><a target="_blank" href="about.html">About</a></li>
+                </ul>
+                <hr width="80%" style="border: 1px solid black; margin: 1.5rem auto;">
+                <ul>
+                    <li>Other sites:</li>
+                    <li><a target="_blank" href="https://ocw.mit.edu/">MIT OCW</a></li>
+                    <li><a target="_blank" href="https://www.khanacademy.org/">Khan Academy</a></li>
+                    <li><a target="_blank" href="https://www.youtube.com/channel/UCiEHVhv0SBMpP75JbzJShqw">Lectures by Walter Lewin</a></li>
+                </ul>
+                <hr width="80%" style="border: 1px solid black; margin: 1.5rem auto;">
+                <ul>
+                    <li>Other topics:</li>
+                    <li><a target="_blank" href="https://ocw.mit.edu/">Wave-particle duality</a></li>
+                    <li><a target="_blank" href="https://www.youtube.com/watch?v=a8FTr2qMutA">Heisenberg's Principle</a></li>
+                    <li><a target="_blank" href="https://www.thoughtco.com/what-is-the-anthropic-principle-2698848">The Anthropic Principle</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="section-intro">
+                <h1 class="main-page-title">Dynamics-2</h1>
+                <p>This time, we'll take a look into what momentum. We'll learn the basics of collision and make an attempt to derive Newton's third law with the concept of conservation of momentum. Momentum is a word you haven't probably heard before. Let's start there.
+                </p>
+            </div>
+
+            <hr width="92%" class="hr">
+            
+            <div class="section-t">
+                <h1 style="text-transform: uppercase;">Momentum</h1>
+                <p>Newton described a very useful quantity in his <a href="https://en.wikipedia.org/wiki/Philosophi%C3%A6_Naturalis_Principia_Mathematica">Principia</a> - the "quantity of motion". We know that motion directly corresponds to a velocity. What about quantity though? Any moving body, no matter how small, is bound to have some mass in our world. It makes sense if we multiply the velocity of the body with its mass that we should get the "quantity of motion". This is exactly what momentum is. We define momentum as:
+                    $$\vec p=m\vec v$$
+                where \(\vec p\) is the momentum. Notice that \(p\) is a vector. Its direction is the same as the direction of the velocity for the body (or system for that matter). But how could this be of any use to us? It turns out that for an isolated system (a system where all forces are internal), the momentum remains conserved. Imagine how a gun recoils. The bullet shoots out with incredible speed in one direction. The gun recoils in the other, in an effort to conserve the momentum of the gun-bullet system.
+                </p>
+
+                <h1><i>Conservation of momentum</i></h1>
+                <p>As we already discussed that in the absence of an external force, the momentum of a system is always conserved. Let's put that in a more mathematical way. Check out this simulation first -</p>
+                <p>Let's take two blocks on a frictionless surface (we physicists hate friction, don't we?) - One is at rest while the other moves toward it, to the right at say \(5m/s\). They collide. Without thinking about numbers - let's say the moving block is \(A\) and the one at rest is \(B\). What happens if \(B>>A\)? \(A\) will probably bounce back, right? Think as \(A\) being a small ball and \(B\) a big wall. It seems quite intuitive now, doesn't it? Now what if \(B\) is not as big as \(A\) but still fairly massive in comparison? \(A\) will probably slow down and transfer some of its momentum to the other block. Here's where momentum comes in handy to use. Block \(A\) can never transfer it's velocity to \(B\) in this case since it would take a greater force to move a greater mass at the same velocity. Using the concept of momentum helps us with that. Now what if they're the same mass? One might come to a halt and transfer all its momentum to the other one which continues in the same trajectory. Think about what happens now if \(B\) is much smaller.</p>
+                <p>All this is quite intuitive. Let's form a mathematical foundation for all the facts we've discussed. What's the initial momentum of the system, considering no external forces act on it? Well, it's the momentum of each individual entity of the system combined. I could write it in the following manner. Say the system has \(i\) entities. The net initial momentum can be written as:
+                    $$\vec p_{0_{net}}=\sum_0^i p_{0_i}=\sum_0^i m_iv_{0_i}$$
+                This becomes quite complicated for larger mass configurations. For our two block system, since the second mass is at rest, we can easily write:
+                    $$p_{0_{net}}=m_Av_{0_A}$$
+                Hopefully, it's already understood that momentum is a vector. Now, the final momentum needs to stay the same. Say both gain a velocity after colliding. Therefore, 
+                    $$m_Av_{0_A}=m_Av_A+m_Bv_B$$
+                Try and isolate the \(v_B\) term to get:
+                    $$v_B=\frac{m_A(v_{0_A}-v_A)}{m_B}$$
+                You see - since the mass of block \(B\) is in the denominator, a higher mass will cause it to gain a smaller velocity.
+                </p>
+            </div>
+
+            <hr width="92%" class="hr">
+
+            <div class="section-t">
+                <h1 style="text-transform: uppercase;">Collisions</h1>
+                <p>Take a look at this simulation. <a href="https://phet.colorado.edu/sims/html/collision-lab/latest/collision-lab_en.html">PHET Collision Lab.</a> You see there are different types of collisions - you can have perfectly elastic, perfectly inelastic or simply inelastic collisions. Here's what each of these terms means:
+                </p>
+
+                <h1><i>Completely (perfectly) elastic collisions</i></h1>
+                <p>Momentum of a system is always conserved in the absence of external forces. The characteristic feature about a completely elastic collision is that the kinetic energy of the system is also conserved, alongside momentum. An example may be as follows. Remember the two blocks we talked about before? Well let's say they're the same, \(m\). One stays initially stationary and the other is moving toward is with velocity \(v\). After the collision, in ideal conditions, all of the momentum from the first block is expected to be transferred to the other. Since they're the same mass, the other gains the same velocity \(v\). The kinetic energy is also conserved in this case.  </p>
+                <p>Another example would be a if say an "ideal" ball hits an "ideal" wall. We imagine that the ball moves toward the wall with a velocity but rebounds with the same velocity in the opposite direction. You might think that this is a violation of the conservation of momentum, since after all, \(\vec p \neq -\vec p\). The thing is that the wall is so damn massive that it provides an "impulse" (learn about impulse <a href="https://www.youtube.com/watch?v=E13h1E_Pc00">with this video</a>) and does gain a velocity itself, but it's just so insignificant that we can neglect is without worry. (The impulse a surface provides also depends on what is known as the "coefficient of restitution". It's a complex topic and I haven't researched much about it yet either but do check it out). Therefore, we get two equations for elastic collisions:
+                    $$\sum^i \vec p_{0_i}=\sum^i \vec p_{f_i}$$
+                    $$\sum^i KE_{0_i}=\sum^i KE_{f_i}$$ </p>
+                <p>An aside: The term "perfectly elastic collision" makes one feel like there are elastic collision that are not perfect as well. This is just traditional terminology and physicists decided to stick with it.</p>
+
+                <h1><i>Inelastic collisions</i></h1>
+                <p>These are simple ones. Perfectly elastic collisions can be confusing since you need to take into account the conservation of kinetic energy of the system. Here, we simply need to use the equation of conservation of momentum to find whatever we'd like to find. Kinetic energy is always lost in such collision. On an unrelated note, think about how an increase in the kinetic energy of the system would be a violation of the conservation of energy.</p>
+
+                <h1><i>Perfectly inelastic collisions</i></h1>
+                <p>In such collisions, the bodies involved will stick together after collision. We can use an equation such as follows:
+                    $$m_Av_{0_A}+m_Bv_{0_B}=(m_A+m_B)v'$$
+                    $$or,\;v'=\frac{m_Av_{0_A}+m_Bv_{0_B}}{(m_A+m_B)}$$
+                Now you might think that kinetic energy should be conserved in this situation as well but it won't be. If you try to substitute the RHS of the equation above for \(v'\), you'll not get the initial kinetic energy of the system which is \(\frac{1}{2}m_A{v_{0_A}}^2+\frac{1}{2}m_B{v_{0_B}}^2\). Try it out for yourself. In fact, often in a perfectly inelastic collision, almost all of the kinetic energy of the system is lost. 
+                </p>
+                <h1><i>Super-elastic collision</i></h1>
+                <p>We could hypothesize a type of collision where the total kinetic energy of the system increases after collision. Some research has been done in this area involving different types of materials but we know for a fact that this would result in a violation of the law of conservation of energy. </p>
+            </div>
+
+            <hr width="92%" class="hr">
+            
+            <div class="section-t">
+                <h1 style="text-transform: uppercase;">Conservation of momentum in two dimensions</h1>
+                <p>For 2-D cases, we would have to break up our motion into two-parts, along each axis and then apply conservation of momentum to each one separately. It's not complicated, but it's a lengthy and a tedious process. In the real world, collisions will rarely be in ideal, one-dimensional circumstances, though, 2-D cases are still not that hard. Make yourself some imaginary two dimensional cases of elastic collisions and work out the physics behind them.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="ending">
+        <span>That's all for now!</span>
+    </div>
+
+    <div class="last">
+        <span>Made by <a href="">Yash Sah</a></span>
+    </div>
+</body>
+</html>

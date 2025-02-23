@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3.0.1/es5/tex-mml-chtml.js"></script>
+    <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" data-auto-a11y="true" ></script>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@0,400;0,600;1,400;1,600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet">
+    <link rel="icon" href="svgs/logo.svg" type="image/svg">
+    <link rel="stylesheet" href="styles/styles.css">
+
+    <title>Gravitation</title>
+</head>
+<body>
+    <div class="nav">
+        <input type="checkbox" id="nav-check">
+        <div class="nav-header">
+          <div class="nav-title">
+            <div class="nav-title__sub"><div class="nav-title__image"><img src="logo.svg" alt="Oops!" height="80px" width="auto"></div></div>
+          </div>
+        </div>
+        <div class="nav-btn">
+          <label for="nav-check">
+            <span></span>
+            <span></span>
+            <span></span>
+          </label>
+        </div>
+        <div class="nav-links">
+            <a target="_blank" href="index.html">Home</a>
+            <a target="_blank" href="start.html">Get started</a>
+            <a target="_blank" href="contact.html">Contact</a>   
+            <a target="_blank" href="about.html">About</a>   
+        </div>
+    </div>
+    
+    <div class="main-page-content">
+        <div class="navbar">
+            <div class="logo">
+                <img src="logo.svg" alt="Error! Can't load logo.">
+                <br>
+                <span style="font-family: 'Source Serif Pro', serif;font-size: 2rem;font-weight: bold;">PHYSICS-360°</span>
+                <br>
+                <span style="font-family: 'Source Serif Pro', serif;font-size: 1.25rem;">Never stop questioning.</span>
+            </div>
+            <div class="links">
+                <ul>
+                    <li><a target="_blank" href="index.html">Home</a></li>
+                    <li><a target="_blank" href="start.html">Get started</a></li>
+                    <li><a target="_blank" href="contact.html">Contact</a></li>
+                    <li><a target="_blank" href="about.html">About</a></li>
+                </ul>
+                <hr width="80%" style="border: 1px solid black; margin: 1.5rem auto;">
+                <ul>
+                    <li>Other sites:</li>
+                    <li><a target="_blank" href="https://ocw.mit.edu/">MIT OCW</a></li>
+                    <li><a target="_blank" href="https://www.khanacademy.org/">Khan Academy</a></li>
+                    <li><a target="_blank" href="https://www.youtube.com/channel/UCiEHVhv0SBMpP75JbzJShqw">Lectures by Walter Lewin</a></li>
+                </ul>
+                <hr width="80%" style="border: 1px solid black; margin: 1.5rem auto;">
+                <ul>
+                    <li>Other topics:</li>
+                    <li><a target="_blank" href="https://ocw.mit.edu/">Wave-particle duality</a></li>
+                    <li><a target="_blank" href="https://www.youtube.com/watch?v=a8FTr2qMutA">Heisenberg's Principle</a></li>
+                    <li><a target="_blank" href="https://www.thoughtco.com/what-is-the-anthropic-principle-2698848">The Anthropic Principle</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="section-intro">
+                <h1 class="main-page-title">Gravitation</h1>
+                <p>The gravitational force - the force that binds the entire universe, from stars to planet to black holes. It keeps the moon in orbit around the earth and keeps the earth in orbit around the Sun. Stars constantly burn through their fuel to produce energies that counteract the attractive force of gravity. Sometimes, in stars considerably larger than the sun, the gravitational force between its particles can cause the star to collapse in on itself, thereby forming a black hole. The gravitational force at the surface of such a collapsed star is so strong that not even light can escape it. This mysterious giant lurks in the center of our galaxy as well, the black hole Sagittarius A.</p>
+                <p>Gravity is everywhere. Even if you have a person standing next to you, both of you exert a gravitational force on each other. This force, thankfully, is much less than \(1\mu N\).</p>
+            </div>
+
+            <hr width="92%" class="hr">
+  
+            <div class="section-t">
+                <h1 style="text-transform: uppercase;">The Universal law of Gravitation</h1>
+                <p>In his Principia, Newton gave the universal law of gravitation. It is usually stated as that every particle attracts every other particle in the universe with a force that is directly proportional to the product of their masses and inversely proportional to the square of the distance between their centers. The idea of square and inverse-square proportionalities were put forth by Galileo in 1602, whereby he claimed that the distance of objects in free fall is proportional to the square of the time taken. Notice how Newton uses the word "proportional" for the force. This means that he was able to provide only a qualitative description of the gravitational force. It was 111 years that the formula was able to provide a definite value for this force. Here's how (I won't bother with the vector signs anymore since it's understood that the force is a vector):
+                    $$F_g \propto \frac{Mm}{r^2}$$
+                    $$\implies F_g = k \frac{Mm}{r^2}$$
+                where \(k\) is the constant of proportionality. This was the universal gravitation constant (written \(G\)) whose value was discovered through an experiment in 1798, 111 years after the Principia was published, by Henry Cavendish. This was the experiment to determine the average density of Earth, which helped in the calculation of the value of \(G\). We now write this law as:
+                    $$F_g=\frac{GMm}{r^2}$$
+                where \(r\) is the separation between the center of masses of the interacting objects. </p>
+            </div>
+        
+            <div class="section-i">
+                <h1></h1>
+                <p></p>
+                <div class="section-i-image">
+                    <img src="" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="ending">
+        <span>That's all for now!</span>
+    </div>
+
+    <div class="last">
+        <span>Made by <a href="">Yash Sah</a></span>
+    </div>
+</body>
+</html>

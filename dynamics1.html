@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3.0.1/es5/tex-mml-chtml.js"></script>
+    <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" data-auto-a11y="true" ></script>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@0,400;0,600;1,400;1,600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet">
+    <link rel="icon" href="svgs/logo.svg" type="image/svg">
+    <link rel="stylesheet" href="styles/styles.css">
+
+    <title>Dynamics-1 | PHYSICS-360°</title>
+</head>
+
+<body>
+    <div class="nav">
+        <input type="checkbox" id="nav-check">
+        <div class="nav-header">
+          <div class="nav-title">
+            <div class="nav-title__sub"><div class="nav-title__image"><img src="logo.svg" alt="Oops!" height="80px" width="auto"></div></div>
+          </div>
+        </div>
+        <div class="nav-btn">
+          <label for="nav-check">
+            <span></span>
+            <span></span>
+            <span></span>
+          </label>
+        </div>
+        <div class="nav-links">
+            <a target="_blank" href="index.html">Home</a>
+            <a target="_blank" href="start.html">Get started</a>
+            <a target="_blank" href="contact.html">Contact</a>   
+            <a target="_blank" href="about.html">About</a>   
+        </div>
+    </div>
+    
+    <div class="main-page-content">
+        <div class="navbar">
+            <div class="logo">
+                <img src="logo.svg" alt="Error! Can't load logo.">
+                <br>
+                <span style="font-family: 'Source Serif Pro', serif;font-size: 2rem;font-weight: bold;">PHYSICS-360°</span>
+                <br>
+                <span style="font-family: 'Source Serif Pro', serif;font-size: 1.25rem;">Never stop questioning.</span>
+            </div>
+            <div class="links">
+                <ul>
+                    <li><a target="_blank" href="index.html">Home</a></li>
+                    <li><a target="_blank" href="start.html">Get started</a></li>
+                    <li><a target="_blank" href="contact.html">Contact</a></li>
+                    <li><a target="_blank" href="about.html">About</a></li>
+                </ul>
+                <hr width="80%" style="border: 1px solid black; margin: 1.5rem auto;">
+                <ul>
+                    <li>Other sites:</li>
+                    <li><a target="_blank" href="https://ocw.mit.edu/">MIT OCW</a></li>
+                    <li><a target="_blank" href="https://www.khanacademy.org/">Khan Academy</a></li>
+                    <li><a target="_blank" href="https://www.youtube.com/channel/UCiEHVhv0SBMpP75JbzJShqw">Lectures by Walter Lewin</a></li>
+                </ul>
+                <hr width="80%" style="border: 1px solid black; margin: 1.5rem auto;">
+                <ul>
+                    <li>Other topics:</li>
+                    <li><a target="_blank" href="https://ocw.mit.edu/">Wave-particle duality</a></li>
+                    <li><a target="_blank" href="https://www.youtube.com/watch?v=a8FTr2qMutA">Heisenberg's Principle</a></li>
+                    <li><a target="_blank" href="https://www.thoughtco.com/what-is-the-anthropic-principle-2698848">The Anthropic Principle</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="section-intro">
+                <h1 class="main-page-title">Dynamics-1</h1>
+                <p>Have you heard of Newton's Laws of Motion? Or perhaps the word 'force'? Under dynamics, we seek to study about forces and dynamical systems, i.e. systems with forces. What is a force? What does it do? We'll take a look at such questions through the next few sections, understanding some really fancy terms- <i>momenta, energy, equilibrium</i> etc. on the way.</p>
+            </div>    
+            
+            <hr width="92%" class="hr">
+
+            <div class="section-t">
+                <h1 style="text-transform: uppercase;">What are forces?</h1>
+                <p>One of the simplest definitions in physics - a force is a push or a pull. That's it. You pull a drawer, you've exerted a <b><i>'force'</i></b> on the drawer. You push a door open, it revolves around its hinges, you've exerted a force. You pull a chair at the dining table, you've exerted a force. Forces are involved even during runs and walks. </p>
+                <p>Sir Isaac Newton in his famous <a href="https://en.wikipedia.org/wiki/Philosophi%C3%A6_Naturalis_Principia_Mathematica">Philosophiæ Naturalis Principia Mathematica</a> explained these forces in great detail and formulated his laws of motion. First, let's take a look at some of these forces.</p>
+                <h1><i>Fundamental Forces</i></h1>
+                <p>There exist a huge number of different types of forces, but all of them are somewhat similar in nature to the four fundamental forces and can be categorised as one of them. These are:
+                    <ol type="i">
+                        <li>Gravitational forces: These are attractive forces that keep planets, stars and satellites in orbit, which exist between any two bodies with mass. </li>
+                        <li>Electromagnetic forces: Forces between charges i.e. protons and electrons.</li>
+                        <li>Strong and weak interaction: Forces within nuclei of atoms.</li>
+                    </ol>
+                </p>
+            </div>
+
+            <hr width="92%" class="hr">
+
+            <div class="section-t">
+                    <h1 style="text-transform: uppercase;">Newton's Laws</h1>
+                    <h1><i>The first law</i></h1>
+                    <p>With this introduction to what a force is, let's go straight into Newton's Laws of Motion. Many of you are probably already familiar with at least the statements of his laws. The first law, in his own fancy words was given as follows:
+                    <br><br>
+                    <span style="padding-left: 2rem; font-style: italic;">'Every body perseveres in its state of being at rest or of moving uniformly straight forward, except insofar as it is compelled to change its state by forces impressed.'</span>
+                    <br><br>
+                    What does it mean? Well, it's famously know as the law of inertia. The inertia of a body is a measure of its mass - how much material a body has. If we something has a high inertia, we mean that it'll resist motion. Do you wonder why you're thrown to the seat in front of you when someone slams the brakes in a car? It's because of your inertia! When the brakes are slammed, there is an acceleration towards the opposite side of the motion of the car, a deceleration. You are thrown to the seat in front in an effort to preserve your state of motion and resist that acceleration towards the opposite direction. The same happens when someone hits the gas. The car accelerates very quickly and you're pinned to your seat. 
+                    </p>
+                    <p>Weight and mass are two completely different things and when we <i><b>'weigh'</b></i> ourselves, it's actually our mass we get to know or rather, what the scale says. Saying <i>I weigh 60 kgs</i> or <i>130 lbs</i> is not scientifically accurate and people use the word mass and weight interchangeably. That said, coming back to Newton's first law, it basically tells us that a body moving along a straight line, will keep moving on the same path unless someone pushes or pulls on it somehow. In other words, a moving body will keep moving along a straight line unless some <i><b>'external' force</b></i> compels it to change its path. Think about it. Do you think a body moving in the outermost parts of space, away from anything we see or feel, will stop? There is nothing to <i>'stop'</i> the body. Why then, does a ball moving on the ground come to a halt? It's because friction, essentially pulls it away from its motion. It tries to oppose the motion of the moving ball. We say that the force of friction acts opposite the ball's velocity.
+                    </p>
+                    <p>From this discussion, we understand that for a body to change its velocity (which includes simply changing the direction of its motion), a push or a pull or rather, a force is required. Remember what the change in velocity is called? Yes, it's the acceleration. Thus, to accelerate a body, a force is required. This is the essence of the first law. Further, it makes sense that to accelerate a heavier body, a larger force will be required. These ideas put together gave rise to Newton's second law.</p>
+            </div>
+
+            <hr width="92%" class="hr">
+
+            <div class="section-t">
+                <h1><i>The second law</i></h1>
+                <p>From the previous paragraph, we understood that the force is proportional to both the acceleration and the mass of the body. What does it mean? Simply, a larger mass requires a larger force to accelerate and if the mass is considered constant, then a greater acceleration will also require a larger force. This can be mathematically stated as:
+                $$F\propto m , F\propto a$$
+                $$\implies F\propto ma$$ 
+                $$\implies F=kma$$
+                Here, \(k\) is called the proportionality constant and has been shown to be equal to 1. In other words:
+                $$\vec F=m\vec a$$
+                This is Newton's second law. He said the following:
+                <br><br>
+                <span style="padding-left: 2rem; font-style: italic;">'The alteration of motion is ever proportional to the motive force impressed; and is made in the direction of the right line in which that force is impressed.'</span>
+                <br><br>
+                It is one of the most fundamental equations to, perhaps all of physics to be honest. It tells us that to accelerate a body of mass \(1\;kg\) by an acceleration of \(1\;m/s^2\), a force equal in magnitude to \(1\;unit\) will be required. Scientists have named this unit after the great man himself. The S.I. Unit of a force is <i><b>Newton (N)</b></i>. Furthermore, notice the vector signs on top. They tell us that the force must have the same direction as the acceleration. Masses are scalar quantities. We do not need to define them by a direction. Conversely, if a force acts in a certain direction, the acceleration must then be in that direction only. But the motion of the body need not necessarily be in the direction of the force. Frictional forces eg. oppose the motion of a body. The body will always move opposite the direction of friction but it will never magically start moving towards the direction of the force. Similarly, when you throw a ball upwards, the acceleration due to gravity points downward, but the ball gradually comes to a halt momentarily at the highest position and then comes down. It still goes up for half a part of the journey.
+                </p>
+            </div>
+
+            <hr width="92%" class="hr">
+
+            <div class="section-i">
+                    <h1><i>The third law</i></h1>
+                    <p>Arguably one of the most famous laws of physics, Newton stated it as follows:
+                    <br><br>
+                    <span style="padding-left: 2rem; font-style: italic;">'To every Action there is always an equal reaction; or the mutual actions of two bodies upon each other are always equal, and directed to contrary parts.'</span>
+                    <br><br>
+                    What Newton is saying here is that if you push a box, the box basically pushes back at you too. If you exert a force on the box, the box exerts the same force on you. Here, we discuss about vectors. The magnitude or the numerical value of the two forces will be the same, just that they will be on different bodies and in mutually opposite directions. <b>Remember! </b>The two forces don't cancel each other or anything. They're two different forces on two completely different bodies. 
+                    </p>
+                    <div class="section-i-image">
+                        <img src="dynamics1.1.svg" alt="ERROR! Can't load image.">
+                    </div>
+                    <p>Here, you see how that if you were to push a box with a force to the right, that it'd push you towards the left with the same force. Why then, does only the box move and not you? To answer this, take a look at Newton's second law. For a huge mass, the force required to produce an appreciable acceleration will be large. Furthermore, there is friction between you and the ground which prevents or rather, opposes your movement too.</p>
+            </div>
+            
+            <hr width="92%" class="hr">
+
+            <div class="section-t">
+                <h1 style="text-transform: uppercase;">Some links</h1>
+                <p>I'd highly recommend you check out the following links to learn more about what forces are, the different types of forces and gain a deeper appreciation for Newton's(?) laws.
+                <br><br>
+
+                <span style="padding-left: 2rem;"><a href="https://www.physicsclassroom.com/class/newtlaws/Lesson-2/Types-of-Forces">i. Other types of forces</a><br><i>There's gravity, electricity, magnetic forces, friction, normal forces, tension forces, spring forces... The list goes on.</i></span>
+                <br><br>
+
+                <span style="padding-left: 2rem;"><a href="https://blog.praxilabs.com/2021/02/24/applications-of-newtons-laws-of-motion-in-daily-life/">ii. Application of Newton's laws in daily life</a> <br><i>Are his laws even that important?</i></span>
+                <br><br>
+
+                <span style="padding-left: 2rem;"><a href="https://www.wired.com/2016/03/im-totally-newtons-laws-motion/">iii. Are Newton's laws really his?</a><br><i>Galileo, Aristotle and other natural philosophers did a lot of research in the field of kinematics and dynamics. Are Newton's laws even original?</i></span>
+                </p>
+            </div>
+        </div>
+    </div>
+    
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="ending">
+        <span>That's all for now!</span>
+    </div>
+
+    <div class="last">
+        <span>Made by <a href="">Yash Sah</a></span>
+    </div>
+
+
+    
+    
+
+
+
+
+
+
+
+
+
+</body>
+</html>
